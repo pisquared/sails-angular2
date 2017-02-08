@@ -1,0 +1,17 @@
+<div *ngIf="hero">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <label>id: </label>{{hero.id}}
+  </div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name"/>
+  </div>
+
+  <multi-select [options]="powers" [(ngModel)]="hero.powers"></multi-select>
+  <multi-select [options]="vulnerabilities" [(ngModel)]="hero.vulnerabilities"></multi-select>
+
+  <button (click)="goBack()">Back</button>
+</div>
+
+<pre>{{hero|json}}</pre>

@@ -32,9 +32,11 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+    '/': { view: 'homepage' },
+    '/heroes': { view: 'homepage' },
+    '/dashboard': { view: 'homepage' },
+    '/detail/*': { view: 'homepage' }
+
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +47,7 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+
 
 };
